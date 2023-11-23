@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block index %}
+<!--  -->
+<section id="hero">
+    <div class="hero-container">
+        <div data-aos="fade-in">
+            <div class="hero-logo">
+                <img class="" src="{% static '/img/logo.png' %}" alt="Imperial">
+            </div>
+
+            <h1>Welcome to {{ company }}</h1>
+            <h2>We offer <span class="typed" data-typed-items="construction, pool maintanance, and more, at  best prices!"></span></h2>
+            <div class="actions">
+                <a href="{% url 'about' %}" class="btn-get-started">Get Strated</a>
+                <a href="{% url 'services' %}" class="btn-services">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+{% endblock index %}
+<!--  -->
+{% block content %}
+<!--  -->
+<!-- ======= About Section ======= -->
+<section id="about">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">About Us</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">{{ company }}' vision is to be the best at transforming homes to become classy and livable with our pool services</p>
+            </div>
+        </div>
+    </div>
+    <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+
+            <div class="col-lg-6 about-img">
+                <img src="{% static '/img/about-img.jpg' %}" alt="">
+            </div>
+
+            <div class="col-md-6 about-content">
+                <h2 class="about-title">We provide great services and ideass</h2>
+                <p class="about-text">
+                    {{ company }} is a company which offer all your construction needs at the best prices. We believe that renovations is important to increase the lifestyle and the value of your home.
+
+
+                </p>
+                <p class="about-text">
+                    Our work is fun and easy, but professional. We believe that your house must be turned into a home with the best value, but still have money in your pocket for that expensive holiday.
+                </p>
+                <p class="about-text">
+                    {{ company }} is a construction company that value our clients and offer the best service with friendliness and efficiency We can meet any deadline and no job is too big or to small. </p>
+                <p class="about-text">
+                    {{ company }} is well known for it's unique art which resembles your ideas and our best ideas. Our services are fully customized to suit your needs
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- ======= Services Section ======= -->
+<section id="services">
+    <div class="container">
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-12">
+                <h3 class="section-title">Our Services</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">View a wide range of services we offer and feel free to contact us with your own style and we will deliver everything on point.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-table"></i></div>
+                <h4 class="service-title"><a href="">Carpentry</a></h4>
+                <p class="service-description">We ensure that our structures are built by specialized individuals. Our carpenters thrive through the use of creativity.
+                    <br><br> {{ company }} shines through them!</p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-house"></i></div>
+                <h4 class="service-title"><a href="">Household DIY
+
+                </a></h4>
+                <p class="service-description">With our DIY services we ensure that all those small faults are fixed. We focus on the smallest details.
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
+                <h4 class="service-title"><a href="">Ceiling Installation
+
+                </a></h4>
+                <p class="service-description">The interior surface is a space we also thrive in. We pay attention to detail, the lines, the structure, and design is important to how we do ceiling installations.
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="service-title"><a href="">Garden Maintenance
+
+                </a></h4>
+                <p class="service-description">We maintain your gardens to look fresh. We ensure your grass, flowers, and shrubs are well taken care of.
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+                <h4 class="service-title"><a href="">Flooring
+                </a></h4>
+                <p class="service-description">We apply our floors with finesse. Everything is leveled up, well applied to your needs.
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-shop-window"></i></div>
+                <h4 class="service-title"><a href="">Tile Installation and Replacement
+                </a></h4>
+                <p class="service-description">Whether on the wall or the floor we replace and install. Our tiles stick and they are installed to last decades.
+
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="service-title"><a href="">Plumbing
+                        </a></h4>
+                <p class="service-description">Pool Masters is equipped to meet all your plumbing needs. We provide the highest quality services at competitive prices with prompt, professional and friendly service.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+                <h4 class="service-title"><a href="">Construction
+
+                        </a></h4>
+                <p class="service-description">Concrete Work, Metal Work, Aluminum and Glazing, Mechanical, Shopfitting, Joint Sealing, Plastering and Spalling, Ceiling and Partitioning, Tenant Installation, Roofing
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item">
+                <div class="service-icon"><i class="bi bi-calendar4-week"></i></div>
+                <h4 class="service-title"><a href="">Painting</a></h4>
+                <p class="service-description">Painting of your steel palisades, gates, doors, decks, thatch timber, garage doors, window frames, galvanized gutters and down pipes, etc. makes it rust/corrosion and your wood
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Services Section -->
+
+{% comment %}
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+
+    <div class="container" data-aos="fade-up">
+
+
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+            <h3>What makes us different?</h3>
+
+            <div class="row">
+
+                <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="{% static 'img/features-3.png' %}" class="img-fluid p-4" alt="">
+                </div>
+
+                <div class="col-xl-8 d-flex content">
+                    <div class="row align-self-center gy-4">
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up">
+                            <i class="ri-line-chart-line"></i>
+                            <div>
+                                <h4>Software Development </h4>
+                                <p>Stemgon is committed to engineering solutions based on sound industry standards giving the customer innovative software based on world class technologies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                            <i class="ri-stack-line"></i>
+                            <div>
+                                <h4>Whatsapp Bots</h4>
+                                <p>Progressively integrate with Whatsapp Business API as part of your business solution, to interact with clients.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-brush-4-line"></i>
+                            <div>
+                                <h4>Business Intelligences</h4>
+                                <p>Business Intelligence solutions to help visualise your business data using state of the art reports. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <i class="ri-magic-line"></i>
+                            <div>
+                                <h4>Consulting</h4>
+                                <p>We put in the groundwork in understanding your business so that together, we can realise your project’s greatest potential. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                            <i class="ri-command-line"></i>
+                            <div>
+                                <h4>Quality Assurance </h4>
+                                <p>Solutions engineered by Stemgon can always be seamlessly integrated with your existing corporate infrastructure. We also guarantee thorough QA and optimization for any kind of mobile device. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                            <i class="ri-radar-line"></i>
+                            <div>
+                                <h4>Business Analysis </h4>
+                                <p>Business Analysts aim to investigate and gather all the requirements, analyze every detail, and render an overall vision in the form of pixel-perfect documentation</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End Feature Icons -->
+
+    </div>
+
+</section>
+<!-- End Features Section -->
+{% endcomment %}
+
+<!--  -->
+{% endblock content %}

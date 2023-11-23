@@ -1,0 +1,7 @@
+services:
+  web: 
+    build:
+      context: vroomhive # looks at the folder with a dockerfile
+      target: builder
+    ports: 
+      - '8000:8000'

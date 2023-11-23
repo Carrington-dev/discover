@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+<!--  -->
+{% block title %} {{ title }} | {% endblock title %}
+<!--  -->
+{% block content %}
+<!--  -->
+<!-- ======= Contact Section ======= -->
+<section id="contact">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Contact Us</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Have a specific pool project in mind? Maybe you’re just exploring some ways to take your pool to the next level?
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4">
+                <div class="info">
+                    <div>
+                        <i class="bi bi-geo-alt"></i>
+                        <p>1440 vulture street
+                            <br>Riverside view, Ext 35</p>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                        <p>{{ email }}</p>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-phone"></i>
+                        <p>{{ tel }}</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+                <div class="form">
+                    <form action="{% url 'contact' %}" method="post" role="form" class="php-email-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+
+{% endblock content %}
